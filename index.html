@@ -15,6 +15,7 @@
 
 <body>
     <section class="layout">
+        <!-- INICIO DEL HEADER -->
         <header class="header">
             <div class="logo-header">
                 <a href=""><img src="./assets/img/logo.png" alt=""></a>
@@ -36,22 +37,27 @@
                             <a href="#">Collares</a>
                             <a href="#">Anillos</a>
                             <a href="#">Anillos</a>
-                          </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </header>
+        <!-- FIN DE LA SECCIÓN HEADER -->
 
-        <div class="jumbotron">
-            <div class="img_banner">
-                <img src="assets/img/banner.png" alt="logo">
+        <!-- INICIO PRIMER CONTENIDO (JUMBOTRON) -->
+        <section class="primer_contenido">
+            <div class="jumbotron">
+                <div class="img_banner">
+                    <img src="assets/img/banner.png" alt="logo">
+                </div>
             </div>
-        </div>
+        </section>
+           <!-- FINAL PRIMER CONTENIDO (JUMBOTRON) -->
 
-
+        <!-- INICIO SEGUNDO CONTENIDO -->
         <p class="titulo">Conoce lo que podemos hacer por ti</p>
         <section class="segundo_contenido">
-            <div class="container">
+            <div class="grid_padre">
                 <figure class="img_item">
                     <a href="#"><img src="assets/img/img_segunda_seccion/14.jpeg" class="img_galeria " alt=""></a>
                     <div class="botones">
@@ -115,48 +121,54 @@
                     </div>
                     <button class="btn">COMPRAR</button>
                 </figure>
-                <figure class="img_item">
-                    <a href="#"><img src="assets/img/img_segunda_seccion/16.jpeg" class="img_galeria" alt=""></a>
-                    <div class="botones">
-                        <div class="title_img">
-                            <p class="parrafo">Collar de letras rainbow</p>
-                            <p class="valor">$27.500</p>
-                        </div>
-                    </div>
-                    <button class="btn">COMPRAR</button>
-                </figure>
-                <figure class="img_item">
-                    <a href="#"><img src="assets/img/img_segunda_seccion/18.jpeg" class="img_galeria" alt=""></a>
-                    <div class="botones">
-                        <div class="title_img">
-                            <p class="parrafo">Collar de letras rainbow</p>
-                            <p class="valor">$27.500</p>
-                        </div>
-                    </div>
-                    <button class="btn">COMPRAR</button>
-                </figure>
-
 
             </div>
         </section>
+        <!-- FINAL SEGUNDO CONTENIDO -->
 
 
-        <article class="tercer_contenido">
-            <div class=" cuadro bloque_izquierdo">
+        <!-- INICIO TERCER CONTENIDO -->
+        <section class="tercer_contenido">
+            <div class="grid_padre bloque_izquierdo">
+                <figure class="img_item">
+                    <a href="#"><img src="assets/img/img_segunda_seccion/24.jpeg" class="img_tercer_contenido"
+                            alt=""></a>
+                    <div class="botones">
+                        <div class="title_img">
+                            <p class="parrafo">Aretes ultra finos</p>
+                            <p class="valor">$35.500</p>
+                        </div>
+                    </div>
+                    <button class="btn">COMPRAR</button>
+                </figure>
             </div>
-            <div class=" cuadro bloque_derecho">
-                <p>Cuentanos tus gustos y nosotros </br> lo diseñamos a tu medida</p>
+            <div class="bloque_derecho">
+                <p class="titulo_tercer_contenido">Cuentanos tus gustos y nosotros lo diseñamos a tu medida</p>
                 <hr>
-                <p></p>
-                <div class="valor_input">
-                    <input type="text">
+                <h2>Déjanos tus datos</h2>
+                <div class="register_grid_padre">
+                    <!-- <label for="nombre">Nombre:</label> -->
+                    <input class="nombre" type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+                    <!-- <label for="apellido">Apellido:</label> -->
+                    <input class="apellido" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+
+                    <!-- <label for="telefono">Teléfono:</label> -->
+                    <input class="telefono" type="number" id="telefono" name="telefono" placeholder="Teléfono" required>
+                    <!-- <label for="contrasena">Contraseña:</label> -->
+                    <input class="password" type="password" id="contrasena" name="contrasena" placeholder="Contraseña"
+                        required>
+
+                    <!-- <label for="correo">Correo:</label> -->
+                    <input class="correo" type="email" id="correo" name="correo" placeholder="Dirección de Correo"
+                        required>
+                        <button>Registrar</button>
                 </div>
             </div>
+        </section>
+        <!-- FINAL TERCER CONTENIDO -->
 
-        </article>
-
-
-
+<!-- INICIO TERCER CONTENIDO -->
         <p class="titulo">Tesoros cargados de encanto</p>
         <section class="cuarto_contenido">
             <!-- <div class="contenedor"> -->
