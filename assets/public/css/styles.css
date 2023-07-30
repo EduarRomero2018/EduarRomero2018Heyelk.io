@@ -318,16 +318,27 @@ li.dropdown {
         margin: 10px;
     }
 
-    .jumbotron {
-        background: var(--color_primario);
+    .primer_contenido .jumbotron {
+        background:none;
         border-radius: 0px 0px 0px 0px;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 200px;
     }
 
     .img_banner img {
         width: 100%;
+        height: 200px;
         border-radius: 0px 0px 0px 0px;
+    }
+
+    .img_galeria:hover {
+        -webkit-transform:none;
+        transform:none;
+        transition:none;
+    }
+    .grid_padre .title_img {
+
+        color: #ffffff;
     }
 }
 
