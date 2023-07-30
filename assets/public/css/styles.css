@@ -192,7 +192,7 @@ li.dropdown {
     background: linear-gradient(90deg, rgba(50, 54, 55, 1) 34%, rgba(73, 62, 62, 1) 55%, rgba(106, 74, 72, 1) 83%, rgba(173, 98, 92, 1) 100%, rgba(229, 130, 109, 1) 100%);
 }
 
-/* Estilos del SEGUNDO_CONTENIDO */
+/* ESTILOS SEGUNDO_CONTENIDO */
 .grid_padre {
     margin: 10px;
     padding: 40px;
@@ -331,7 +331,7 @@ li.dropdown {
     }
 }
 
-/* TERCER CONTENIDO */
+/* ESTILOS TERCER CONTENIDO */
 .tercer_contenido{
     /* border:1px solid #e5826d; */
     margin: 5px;
@@ -347,14 +347,6 @@ li.dropdown {
     /* align-items: center; */
     /* Centrar verticalmente */
 }
-
-/* .tercer_contenido {
-    margin: 20px;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(221, 221, 221, 1) 68%, rgba(255, 255, 255, 1) 89%);
-    width: auto;
-    height: 600px;
-    display: flex;
-} */
 
 /* Estilos de la imagen del tercer contenido (bloque izquierdo) */
 .img_item .img_tercer_contenido{
@@ -412,71 +404,28 @@ border-radius: 5px;
     grid-column: 1 / 3; /* El campo de correo ocupa todas las columnas disponibles */
   }
 
-
-
-
-
-.valor_input {
-    border: 2px solid white;
-}
-
-.medios_pago_grid {
-    background: radial-gradient(circle, rgba(229, 130, 109, 1) 0%, rgba(127, 87, 79, 1) 0%, rgba(99, 75, 70, 1) 28%, rgba(76, 65, 63, 1) 70%, rgba(50, 54, 55, 1) 100%);
-    width: auto;
-    height: auto;
-    display: flex;
-    /* align-content:space-around; */
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.grid_padre_img {
-    padding: 50px;
-}
-
-.grid_padre_img h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular';
-    font-size: 25px;
-}
-
-.volumen_img {
-    /* width: 300px; */
-    /* border: 0.2px solid #eac19a; */
-    height: auto;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    border: 1px solid #eac19a;
-    /* border-style: solid; */
-    border-radius: 20px;
-    border-style: inset;
-}
-
-.volumen_img p {
-    padding: 20px;
-}
-
-.volumen_img img {
-    width: 30%;
-}
-
+/* ESTILOS CUARTO CONTENIDO */
 .cuarto_contenido {
-    background-color: #ffffff;
+    background-color: var(--fondo_color_logo);
     /* border: 1px solid black; */
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
+   display: grid;
+   grid-template-columns: 1 1 1 auto 1fr;
+    /* margin: 10px; */
+    padding: 20px;
+    /* display: grid; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Tamaño delas columnas*/
+    grid-auto-rows: auto;
+    gap:5px;
+    /* justify-items: center; */
     /* Centrar horizontalmente */
-    align-items: baseline;
-    /* Centrar y justifica los item con espacio */
-    flex-wrap: nowrap;
+    align-items: center;
+    /* Centrar verticalmente */
 }
 
 /* Estilos para las columnas */
 .columna {
-    flex: auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     /*Las columnas ocupan el mismo espacio */
     text-align: center;
     /* Centrar el contenido en cada columna */
@@ -527,6 +476,65 @@ border-radius: 5px;
     background-color: var(--fondo_color_logo);
     color: #ffffff;
 }
+
+
+/* INICIO QUINTO_CONTENIDO */
+
+/* Estilos del titulo de los medios de pagos */
+.quinta_seccion .titulo{
+    font-size: 60px;
+    }
+
+    /* Estilos de los nombres medio de pagos */
+    .quinta_seccion h2{
+    font-size:20px;
+    margin:20px 0px 0px 10px;
+    font-family:'sans-serif';
+    color:white;
+    padding:5px
+    }
+
+.volumen_img {
+    /* width: 300px; */
+    margin-bottom: 15px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid #eac19a;
+    border-radius: 20px;
+    border-style: inset;
+}
+
+
+
+.medios_pago_grid {
+    background: radial-gradient(circle, rgba(229, 130, 109, 1) 0%, rgba(127, 87, 79, 1) 0%, rgba(99, 75, 70, 1) 28%, rgba(76, 65, 63, 1) 70%, rgba(50, 54, 55, 1) 100%);
+    width: auto;
+    height: auto;
+    display: flex;
+    /* align-content:space-around; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.grid_padre_img {
+    padding: 50px;
+}
+
+.volumen_img p {
+    padding: 20px;
+}
+
+.volumen_img img {
+    width: 30%;
+}
+.valor_input {
+    border: 2px solid white;
+}
+
+
+
 
 
 .footer {
