@@ -15,80 +15,161 @@
 
 <body>
     <section class="layout">
-        <div class="header">
-            <header>
-                <nav>
-                    <ul>
-                        <div class="logo">
-                            <a href="#">
-                                <img src="assets/img/logo.png" alt="logo">
-                            </a>
-                        </div>
-                        <li><i class="fas fa-home"></i>Quienes somos</li>
-                        <li>Misión</li>
-                        <li>Visión</li>
-                        <li>Contactanos</li>
-                        <li>Blog</li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+        <header class="header">
+            <div class="logo-header">
+                <a href=""><img src="./assets/img/logo.png" alt=""></a>
+            </div>
+            <div class="nav-menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menu-icon"><img src="./assets/img/hamburger.svg" alt=""></i>
+                </label>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li class="dropdown">
+                        <a href="/quien-soy.html" class="dropbtn">Colecciones</a>
+                        <div class="dropdown-content">
+                            <a href="#">Pulseras</a>
+                            <a href="#">Collares</a>
+                            <a href="#">Collares</a>
+                            <a href="#">Anillos</a>
+                            <a href="#">Anillos</a>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
         <div class="jumbotron">
             <div class="img_banner">
                 <img src="assets/img/banner.png" alt="logo">
             </div>
         </div>
-        </div>
+
+
         <p class="titulo">Conoce lo que podemos hacer por ti</p>
-        <section class="grid_padre">
+        <section class="primer_contenido">
             <div class="container">
                 <figure class="img_item">
-                    <a href="#"><img src="assets/img/9.jpeg" class="img_galeria" alt=""></a>
+                    <a href="#"><img src="assets/img/9.jpeg" class="img_galeria border_uno" alt=""></a>
                 </figure>
                 <figure class="img_item">
-                    <a href="#"><img src="assets/img/11.jpeg" class="img_galeria" alt=""></a>
+                    <a href="#"><img src="assets/img/11.jpeg" class="img_galeria border_dos" alt=""></a>
                 </figure>
 
                 <figure class="img_item">
-                    <a href="#"><img src="assets/img/2.jpeg" class="img_galeria" alt=""></a>
+                    <a href="#"><img src="assets/img/2.jpeg" class="img_galeria border_tres" alt=""></a>
                 </figure>
                 <figure class="img_item">
-                    <a href="#"><img src="assets/img/6.jpeg" class="img_galeria" alt=""></a>
+                    <a href="#"><img src="assets/img/6.jpeg" class="img_galeria border_cuatro" alt=""></a>
                 </figure>
             </div>
-
-
-            <!--
-                <a href="#">
-                    <figure class="item">
-                        <img src="assets/img/3.jpeg" alt="">
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="item">
-                        <img src="assets/img/4.jpeg" alt="">
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="item">
-                        <img src="assets/img/5.jpeg" alt="">
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="item">
-                        <img src="assets/img/6.jpeg" alt="">
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure class="item">
-                        <img src="assets/img/7.jpeg" alt="">
-                    </figure>
-                </a> -->
-
         </section>
 
+        <article class="tercer_contenido">
+            <div class=" cuadro bloque_izquierdo">
+            </div>
+            <div class=" cuadro bloque_derecho">
+                <p>Cuentanos tus gustos y nosotros </br> lo diseñamos a tu medida</p>
+                <hr>
+                <p></p>
+                <div class="valor_input">
+                    <input type="text">
+                </div>
+            </div>
+
+        </article>
 
 
+
+        <p class="titulo">Tesoros cargados de encanto</p>
+        <section class="cuarto_contenido">
+            <!-- <div class="contenedor"> -->
+            <div class="columna">
+                <div class="img_cover">
+                    <img src="assets/img/cuarto_contenido01.png" alt="Imagen 1">
+                </div>
+                <div class="texto">
+                    <h2>Collar de Letras Rainbow </h2>
+                    <button class="button_styles">
+                        <h3>$22.500</h3>
+                    </button>
+                    <button class="button_styles">
+                        <h3>Comprar ahora</h3>
+                    </button>
+                </div>
+            </div>
+            <div class="columna">
+                <div class="img_cover">
+                    <img src="assets/img/cuarto_contenido02.png" alt="Imagen 1">
+                </div>
+                <div class="texto">
+                    <h2>Set de Collar y Topos Estrella Oro</h2>
+                    <button class="button_styles">
+                        <h3>$22.500</h3>
+                    </button>
+                    <button class="button_styles">
+                        <h3>Comprar ahora</h3>
+                    </button>
+                </div>
+            </div>
+            <div class="columna">
+                <div class="img_cover">
+                    <img src="assets/img/cuarto_contenido03.png" alt="Imagen 1">
+                </div>
+                <div class="texto">
+                    <h2>Set 3 Collares Alba Oro</h2>
+                    <button class="button_styles">
+                        <h3>$22.500</h3>
+                    </button>
+                    <button class="button_styles">
+                        <h3>Comprar ahora</h3>
+                    </button>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+
+        <section class="medios_de_pagos">
+            <p class="titulo">Medios de pagos</p>
+            <div class="medios_pago_grid">
+                <div class="container_img">
+                    <h2>Bancolombia</h2>
+                    <figure class="volumen_img">
+                        <img src="./assets/img/medio_pagos/bancolombia.png" alt="">
+                        <p>N. 67878772404</p>
+                    </figure>
+                </div>
+                <div class="container_img">
+                    <h2>Banco Caja Social</h2>
+                    <figure class="volumen_img">
+                        <img src="./assets/img/medio_pagos/cajasocial.png" alt="">
+                        <p>N. 24100622832</p>
+                    </figure>
+                </div>
+                <div class="container_img">
+                    <h2>Banco Colpatria</h2>
+                    <figure class="volumen_img">
+                        <img src="./assets/img/medio_pagos/colpatria.png" alt="">
+                        <p>N. 7432008698</p>
+                    </figure>
+                </div>
+                <div class="container_img">
+                    <h2>Nequi</h2>
+                    <figure class="volumen_img">
+                        <img src="./assets/img/medio_pagos/nequi.png" alt="">
+                        <p>N. 3013087644</p>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
 
 
 
