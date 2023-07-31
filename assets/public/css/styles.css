@@ -177,7 +177,6 @@ li.dropdown {
 .titulo {
     text-align: center;
     justify-content: center;
-    margin: 10px;
     font-family: 'tangerine', cursive;
     font-size: 90px;
     color: #8f6741;
@@ -317,29 +316,85 @@ li.dropdown {
         color: #8f6741;
         margin: 10px;
     }
-
     .primer_contenido .jumbotron {
         background:none;
         border-radius: 0px 0px 0px 0px;
         width: 100%;
         height: 200px;
     }
-
     .img_banner img {
         width: 100%;
         height: 200px;
         border-radius: 0px 0px 0px 0px;
     }
-
     .img_galeria:hover {
         -webkit-transform:none;
         transform:none;
         transition:none;
     }
     .grid_padre .title_img {
-
         color: #ffffff;
     }
+
+    .img_item .img_tercer_contenido{
+        height: 400px;
+        width: 300px;
+        /* border: 1px solid #eac19a; */
+        border-radius:15px;
+        /* max-width:auto; */
+    }
+    /* Estilos para quitarle el padding */
+    .grid_padre {
+        margin: 10px;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* Tamaño delas columnas*/
+        grid-auto-rows: auto;
+        gap: 10px;
+        justify-items: center;
+        /* Centrar horizontalmente */
+        align-items: center;
+        /* Centrar verticalmente */
+    }
+
+}
+
+/* Responsive Título del segundo_contenido*/
+@media (max-width:710px) {
+    /* Estilos para quitarle el padding */
+    .grid_padre {
+        margin: 10px;
+        padding:10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* Tamaño delas columnas*/
+        grid-auto-rows: auto;
+        gap: 10px;
+        justify-items: center;
+        /* Centrar horizontalmente */
+        align-items: center;
+        /* Centrar verticalmente */
+    }
+
+}
+
+@media (min-width:200px) and (max-width:1020px){
+    /* Estilos para quitarle el padding */
+    .grid_padre {
+        margin: 5px;
+        padding:5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* Tamaño delas columnas*/
+        grid-auto-rows: auto;
+        gap: 5px;
+        justify-items: center;
+        /* Centrar horizontalmente */
+        align-items: center;
+        /* Centrar verticalmente */
+    }
+
 }
 
 /* ESTILOS TERCER CONTENIDO */
