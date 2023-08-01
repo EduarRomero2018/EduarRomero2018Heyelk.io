@@ -3,9 +3,8 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
 :root {
-    --color_primario: #e5826d;
+    --color_primario: # ;
     --fondo_color_logo: #323637;
     --tipografia_principal: 'tangerine';
     --color_titulos: #8f6741;
@@ -14,11 +13,12 @@
     --Alumni: 'Alumni Sans Pinstripe', sans-serif;
     --Big: 'Big Shoulders Display', cursive;
     --Wire: 'Wire One', sans-serif;
+    /* 1280x500 -> Medida para las imagnes */
 }
 
 body {
-    background-color: #f5f8fa;
-    font-family: Roboto, sans-serif;
+    background-color:white;
+    /* font-family: Roboto, sans-serif; */
     color: white;
 }
 
@@ -198,7 +198,7 @@ li.dropdown {
 
 /* ESTILOS SEGUNDO_CONTENIDO */
 .grid_padre {
-    margin: 10px;
+    margin: 0px 0px -10px 0px;
     padding: 40px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -630,6 +630,7 @@ border-radius: 5px;
     margin:20px 0px 0px 20px;
     transition: 0.5s;
 }
+
 .svg img:hover{
     width:52px;
     margin:20px 0px 0px 20px;
@@ -686,3 +687,68 @@ font-family: var(--Alumni);
     text-decoration: none;
     color:#ffffff;
 }
+
+
+/* INICIO PRUEBA IMAGEN DE FONDO  */
+.fondo_svg{
+    background-color:#e5826d;
+    width: auto;
+    padding: 10px
+}
+
+.fondo_svg img{
+    width: 100%;
+    height: auto;
+    display: block; /* Elimina espacios no deseados debajo de la imagen */
+}
+/* FINAL PRUEBA IMAGEN DE FONDO  */
+
+
+
+
+
+/* INICIO TERCER CONTENIDO NUEVO */
+
+.tercer_contenido_nuevo{
+display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap:.2rem;
+margin: 10px 0px 10px 0px;
+height: auto;
+background-color: #f4f2f3;
+}
+
+.tercer_contenido_nuevo .izquierdo_nuevo{
+    width: auto;
+    height: auto;
+    /* border: 1px solid #323637; */
+}
+
+.tercer_contenido_nuevo img{
+    width: 100%;
+    border-radius: 0px 10px 10px 0px
+}
+
+.tercer_contenido_nuevo .derecho_nuevo{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid #13b3db; */
+    color: var(--color_titulos);
+    font-family: var(--tipografia_principal);
+    text-align: center;
+    font-size: 50px;
+}
+
+.derecho_nuevo p{
+    color: var(--color_titulos);
+    font-family: var(--tipografia_principal);
+    text-align: center;
+    font-size: 50px;
+    margin: 30px;
+}
+
+
+
+
+
+/* FIN TERCER CONTENIDO NUEVO */
