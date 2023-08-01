@@ -59,7 +59,9 @@ header {
 
 .nav-menu a {
     text-decoration: none;
-    color: #fff;
+    color: var(--blanco_frontal);
+    font-family: var(--Alumni);
+    font-size: 30px;
 }
 
 
@@ -128,7 +130,7 @@ header {
 }
 
 .dropdown-content a {
-    color: #232020;
+    color: black;
     border-radius: 5px;
     padding: 12px 16px;
     text-decoration: none;
@@ -137,10 +139,10 @@ header {
 }
 
 .dropdown-content a:hover {
-    background-color: var(--color_primario);
+    background-color: #e5816d89;
     border: 1px solid var(--color_primario);
     padding: 12px 16px;
-    color: #ffffff
+    color: var(--fondo_color_logo)
 }
 
 .dropdown:hover .dropdown-content {
@@ -240,11 +242,11 @@ li.dropdown {
 .grid_padre .title_img {
     padding: 20px;
     display: flex;
-    font-size: 20px;
-    /* font-family: var(--tipografia_principal); */
+    font-size: 30px;
+    font-family: var(--Alumni);
     justify-content: start;
     position: relative;
-    color: #d0a47aa1
+    color: var(--blanco_frontal);
 }
 
 /* Posicionamos el valor al final (derecha)*/
