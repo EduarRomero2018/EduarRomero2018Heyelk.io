@@ -7,8 +7,13 @@
 :root {
     --color_primario: #e5826d;
     --fondo_color_logo: #323637;
-    --tipografia_principal: 'tangerine', cursive;
-    --color_titulos: #8f6741
+    --tipografia_principal: 'tangerine';
+    --color_titulos: #8f6741;
+    --blanco_fondo:#fbfcfe;
+    --blanco_frontal:#ffffff;
+    --Alumni: 'Alumni Sans Pinstripe', sans-serif;
+    --Big: 'Big Shoulders Display', cursive;
+    --Wire: 'Wire One', sans-serif;
 }
 
 body {
@@ -553,22 +558,21 @@ border-radius: 5px;
 
     /* Estilos de los nombres medio de pagos */
     .quinta_seccion h2{
-    font-size:20px;
+    font-size:35px;
     margin:20px 0px 0px 10px;
-    font-family:'sans-serif';
+    font-family:var(--Big);
     color:white;
     padding:5px
     }
 
 .volumen_img {
-    /* width: 300px; */
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     height: auto;
     display: flex;
     justify-content: start;
     align-items: center;
     border: 1px solid #eac19a;
-    border-radius: 20px;
+    border-radius: 0px 20px 20px 0px;
     border-style: inset;
 }
 
@@ -600,8 +604,16 @@ border-radius: 5px;
 
 
 /* ESTILOS ULTIMO CONTENIDO (FOOTER)*/
+
+/* Cargamos la imagen de fondo del Footer */
+.ultima_seccion{
+    background: url(../../img/svg_footer/fondo1.svg) no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Decimos quq vamos a trabajar con css grid */
 .footer_grid_padre {
-    background-color:var(--fondo_color_logo);
     height: auto;
     width: 100%;
     display:grid;
@@ -612,17 +624,65 @@ border-radius: 5px;
     grid-area: 10px;
 }
 
-.footer_grid_padre .general_footer{
-    margin: 50px;
-    padding: 5px;
+/* Estilos social network */
+.svg img{
+    width:34px;
+    margin:20px 0px 0px 20px;
+    transition: 0.5s;
+}
+.svg img:hover{
+    width:52px;
+    margin:20px 0px 0px 20px;
+    transition: 0.1s;
+
 }
 
+/* Le colocamos un margen a cada icono de red social */
+.footer_grid_padre .general_footer{
+    margin: 20px;
+
+}
+
+/* Estilo a los titulos del footer (h3) */
+.general_footer h3{
+color: var(--blanco_frontal);
+font-size: 30px;
+font-family: var(--Alumni);
+}
+
+/* Estilos para los UL del footer */
 .general_footer ul{
     margin:15px 0px;
 }
 
-.general_footer li{
+/* Estilos para los elementos Li del footer */
+.footer_grid_padre li{
     padding:10px 0px;
-    text-decoration: none;
     list-style: none;
+    font-family: var(--Alumni);
+    font-size: 25px;
+
+}
+.footer_grid_padre li:hover{
+    background-color:#3236372e;
+    color: black;
+    border-radius:10px;
+    padding:10px 0px;
+}
+
+/* Estilos para que se coloque al lado el icono del itulo del footer */
+.general_footer .inline{
+    display: flex;
+}
+
+/*Estilos del icono del h3 del footer  */
+.inline img{
+    padding: 0px 0px;
+    width: 35px;
+}
+
+/* Estilos para los enlaces del footer */
+.general_footer a{
+    text-decoration: none;
+    color:#ffffff;
 }
