@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root {
-    --color_primario: # ;
+    --color_primario: #e5826d;
     --fondo_color_logo: #323637;
     --tipografia_principal: 'tangerine';
     --color_titulos: #8f6741;
@@ -213,13 +213,6 @@ li.dropdown {
     /* Centrar verticalmente */
 }
 
-/* Estilos de la tarjeta que contiene la imagen, texto y valor */
-.img_item {
-    overflow: hidden;
-    border: 1px solid #eac19a;
-    border-style: inset;
-    border-radius: 10px;
-}
 
 /* Estilos de la imagen que esta dentro de la tarjeta */
 .img_galeria {
@@ -343,13 +336,8 @@ li.dropdown {
         color: #ffffff;
     }
 
-    .img_item .img_tercer_contenido{
-        height: 400px;
-        width: 300px;
-        /* border: 1px solid #eac19a; */
-        border-radius:15px;
-        /* max-width:auto; */
-    }
+
+
     /* Estilos para quitarle el padding */
     .grid_padre {
         margin: 10px;
@@ -405,57 +393,31 @@ li.dropdown {
 }
 
 /* ESTILOS TERCER CONTENIDO */
-.tercer_contenido{
-    /* border:1px solid #e5826d; */
-    margin: 5px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    /* Tamaño delas columnas*/
-    grid-auto-rows: auto;
-    gap: 10px;
-    justify-items: center;
-    background-color:black;
-    /* Centrar horizontalmente */
-    /* align-items: center; */
-    /* Centrar verticalmente */
-}
-
-/* Estilos de la imagen del tercer contenido (bloque izquierdo) */
-.img_item .img_tercer_contenido{
-    height: 476px;
-    width: 476px;
-    /* border: 1px solid #eac19a; */
-    border-radius:15px;
-    max-width:auto;
-}
 
 
-/* Estilos del texto que esta en el segundo bloque */
-.bloque_derecho .titulo_tercer_contenido {
-    font-family: var(--tipografia_principal);
-    text-align: center;
-    font-size: 50px;
-    margin: 20px;
-    color: var(--color_titulos);
-}
 
-/* Estilos contenedor padre del formulario de registro*/
-.bloque_derecho .register_grid_padre{
-background: linear-gradient(90deg, rgba(50, 54, 55, 1) 34%, rgba(73, 62, 62, 1) 55%, rgba(106, 74, 72, 1) 83%, rgba(173, 98, 92, 1) 100%, rgba(229, 130, 109, 1) 100%);
+/* REGISTER */
+.register_grid_padre{
+background-color: var();
 /* width: 100%; */
-padding: 30px;
 border-radius: 5px;
+height: 300px;
 }
 
 /* Estilos para el formulario */
 .register_grid_padre {
-    margin: 10px;
+    /* margin: 10px; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-column:auto;
     gap: 10px; /* Espacio entre columnas y filas */
   }
+
+     /* Estilos redondeados de los input*/
+     .register_grid_padre input{
+        border-radius: 5px;
+        height: 40px;
+    }
 
     /* Estilos h2 del registro */
     .bloque_derecho h2{
@@ -465,17 +427,6 @@ border-radius: 5px;
         font-size: 40px;
       }
 
-      /* Estilos redondeados de los input*/
-    .register_grid_padre input{
-        border-radius: 7px;
-        width: 100%;
-        padding: 5px;
-    }
-
-  /* Estilos para el campo de correo */
-  #correo {
-    grid-column: 1 / 3; /* El campo de correo ocupa todas las columnas disponibles */
-  }
 
 /* ESTILOS CUARTO CONTENIDO */
 .cuarto_contenido {
@@ -496,59 +447,14 @@ border-radius: 5px;
     /* Centrar verticalmente */
 }
 
-/* Estilos para las columnas */
-.columna {
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
-    /*Las columnas ocupan el mismo espacio */
-    text-align: center;
-    /* Centrar el contenido en cada columna */
-    color: #8f6741;
-    padding: 10px;
-    border: 1px solid #eac19a;
-    border-radius: 10px;
-    border-style: inset;
-}
 
-.img_cover {
+
+.img_item {
     overflow: hidden;
     /*Ajusta la imagen en su propio contenedor cuando se hace hover*/
 
 }
 
-/* Ajustar el tamaño de las imágenes */
-.cuarto_contenido .columna img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.cuarto_contenido .columna img:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-    transition: all .5s ease-in-out;
-}
-
-.cuarto_contenido .texto h2 {
-    padding: 30px;
-    width: 100%;
-}
-
-.cuarto_contenido .texto h1 {
-    font-size: 25px;
-}
-
-.cuarto_contenido .texto .button_styles {
-    margin: 5px;
-    border-radius: 50px;
-    padding: 5px 20px;
-    border: 1px solid #eac19a;
-    color: #eac19a;
-    background-color: #ffffff;
-}
-
-.cuarto_contenido .texto .button_styles:hover {
-    background-color: var(--fondo_color_logo);
-    color: #ffffff;
-}
 
 
 /* ESTILOS QUINTO_CONTENIDO */
@@ -691,29 +597,11 @@ font-family: var(--Alumni);
 }
 
 
-/* INICIO PRUEBA IMAGEN DE FONDO  */
-.fondo_svg{
-    background-color:#e5826d;
-    width: auto;
-    padding: 10px
-}
-
-.fondo_svg img{
-    width: 100%;
-    height: auto;
-    display: block; /* Elimina espacios no deseados debajo de la imagen */
-}
-/* FINAL PRUEBA IMAGEN DE FONDO  */
-
-
-
-
-
 /* INICIO TERCER CONTENIDO NUEVO */
 
 .tercer_contenido_nuevo{
 display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap:.2rem;
 margin: 10px 0px 10px 0px;
 height: auto;
