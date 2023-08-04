@@ -5,10 +5,22 @@
 }
 
 :root {
-    --color_primario: #e5826d;
-    --fondo_color_logo: #323637;
-    --tipografia_principal: 'tangerine', cursive;
-    --color_titulos: #8f6741
+  --color_primario: #e5826d;
+  --fondo_color_logo: #323637;
+  --tipografia_principal: 'tangerine';
+  --color_titulos: #8f6741;
+  --blanco_fondo:#fbfcfe;
+  --blanco_frontal:#ffffff;
+  --fondo_nuevo_gris: #f4f2f3;
+  --Alumni: 'Alumni Sans Pinstripe', sans-serif;
+  --Big: 'Big Shoulders Display', cursive;
+  --Wire: 'Wire One', sans-serif;
+  /* 1280x500 -> Medida para las imagnes */
+}
+
+body{
+  background-color: var();
+  background-color: var(--fondo_nuevo_gris);
 }
 
 /* Estilos para el contenedor padre */
@@ -25,6 +37,30 @@
   .contenedor_boton{
     background-color: var(--fondo_color_logo);
   }
+
+  .fondo_prueba{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .fondo_prueba img{
+    width: 100%;
+    height: auto;
+  }
+
+  .fondo_prueba p{
+    font-family: var(--tipografia_principal);
+    font-size: 70px;
+    color:#ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 
   /* Estilos para cada imagen */
   .imagen {
