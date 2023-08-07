@@ -457,16 +457,16 @@ li.dropdown {
 /* Estilos h2 del registro */
 .contact-form h2 {
     font-family: var(--Alumni);
-    font-size: 30px;
+    font-size: 25px;
     margin: 20px;
     text-align: left;
-    padding: 20px
+    /* padding: 20px */
 }
 
 /* Estilos elemento P del formulario */
 .contact-form form p {
     margin: 0;
-    padding: 1em;
+    padding: 10px;
     font-family: var(--Alumni);
     font-size: 20px;
 }
