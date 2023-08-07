@@ -3,21 +3,27 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 :root {
     --color_primario: #e5826d;
     --fondo_color_logo: #323637;
     --tipografia_principal: 'tangerine';
     --color_titulos: #8f6741;
-    --blanco_fondo:#fbfcfe;
-    --blanco_frontal:#ffffff;
+    --blanco_fondo: #fbfcfe;
+    --blanco_frontal: #ffffff;
     --Alumni: 'Alumni Sans Pinstripe', sans-serif;
     --Big: 'Big Shoulders Display', cursive;
     --Wire: 'Wire One', sans-serif;
     /* 1280x500 -> Medida para las imagnes */
 }
 
+/* Efecto para los enlaces en la misma pagina */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color:white;
+    background-color: white;
     /* font-family: Roboto, sans-serif; */
     color: white;
 }
@@ -25,7 +31,7 @@ body {
 header {
     background-color: var(--fondo_color_logo);
     border-bottom: 1px solid var(--color_primario);
-    color: #ffffff;
+    /* color: #ffffff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,13 +54,7 @@ header {
     text-decoration: none;
     list-style: none;
     transition: 1s;
-    padding: 5px;
-}
-
-.nav-menu li:hover {
-    background-color: #e5826d;
-    transition: 0.8s;
-    border-radius: 5px;
+    /* padding: 5px; */
 }
 
 .nav-menu a {
@@ -62,6 +62,14 @@ header {
     color: var(--blanco_frontal);
     font-family: var(--Alumni);
     font-size: 30px;
+}
+
+.nav-menu a:hover {
+
+    border-top: 1px solid #e5826d;
+    border-bottom: 1px solid #e5826d;
+    /* box-shadow: 2px 2px 2px 2px var(--color_primario); */
+
 }
 
 
@@ -93,7 +101,7 @@ header {
         position: fixed;
         top: 87px;
         left: -100%;
-        background: var(--fondo_color_logo);
+        /* background: var(--fondo_color_logo); */
         width: 100%;
         height: 100vh;
         right: 0;
@@ -142,7 +150,7 @@ header {
     background-color: #e5816d89;
     border: 1px solid var(--color_primario);
     padding: 12px 16px;
-    color: var(--fondo_color_logo)
+    /* color: var(--fondo_color_logo) */
 }
 
 .dropdown:hover .dropdown-content {
@@ -282,6 +290,7 @@ li.dropdown {
     background-color: var(--fondo_color_logo);
     background-size: 200%;
 }
+
 /* Estilos del boton (COMPRAR) de la segunda sección */
 .grid_padre .btn:hover {
     background-position: right;
@@ -316,27 +325,29 @@ li.dropdown {
         color: #8f6741;
         margin: 10px;
     }
+
     .primer_contenido .jumbotron {
-        background:none;
+        background: none;
         border-radius: 0px 0px 0px 0px;
         width: 100%;
         height: 200px;
     }
+
     .img_banner img {
         width: 100%;
         height: 200px;
         border-radius: 0px 0px 0px 0px;
     }
+
     .img_galeria:hover {
-        -webkit-transform:none;
-        transform:none;
-        transition:none;
+        -webkit-transform: none;
+        transform: none;
+        transition: none;
     }
+
     .grid_padre .title_img {
         color: #ffffff;
     }
-
-
 
     /* Estilos para quitarle el padding */
     .grid_padre {
@@ -352,15 +363,15 @@ li.dropdown {
         align-items: center;
         /* Centrar verticalmente */
     }
-
 }
 
 /* Responsive Título del segundo_contenido*/
 @media (max-width:710px) {
+
     /* Estilos para quitarle el padding */
     .grid_padre {
         margin: 10px;
-        padding:10px;
+        padding: 10px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         /* Tamaño delas columnas*/
@@ -374,11 +385,12 @@ li.dropdown {
 
 }
 
-@media (min-width:200px) and (max-width:1020px){
+@media (min-width:200px) and (max-width:1020px) {
+
     /* Estilos para quitarle el padding */
     .grid_padre {
         margin: 5px;
-        padding:5px;
+        padding: 5px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         /* Tamaño delas columnas*/
@@ -392,87 +404,171 @@ li.dropdown {
 
 }
 
-/* ESTILOS TERCER CONTENIDO */
-
-
-
-/* REGISTER */
-.register_grid_padre{
-background-color: var();
-/* width: 100%; */
-border-radius: 5px;
-height: 300px;
+/* INICIO TERCER*/
+.tercer_contenido {
+    background-color: #ffffff;
+    height: auto;
 }
 
-/* Estilos para el formulario */
-.register_grid_padre {
-    /* margin: 10px; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-column:auto;
-    gap: 10px; /* Espacio entre columnas y filas */
-  }
+/* Titulo tercer contenido */
+.tercer_contenido .titulo {
+    font-family: var(--tipografia_principal);
+    font-size: 90px;
+    color: var(--color_titulos);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
 
-     /* Estilos redondeados de los input*/
-     .register_grid_padre input{
-        border-radius: 5px;
-        height: 40px;
+@media(max-width:680px) {
+
+    .tercer_contenido .titulo {
+        font-size: 70px;
     }
+}
 
-    /* Estilos h2 del registro */
-    .bloque_derecho h2{
-        text-align:center;
-        font-family: var(--tipografia_principal);
-        color:var(--color_titulos);
-        font-size: 40px;
-      }
+@media(max-width:400px) {
+
+    .tercer_contenido .titulo {
+        font-size: 50px;
+    }
+}
+
+
+/* Estilos contenedor tercer contenido */
+.contact-info img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos fondo contact-form segundo bloque seccion tercer-contenido*/
+.contact-form {
+    background: linear-gradient(90deg, rgba(50, 54, 55, 1) 34%, rgba(73, 62, 62, 1) 55%, rgba(106, 74, 72, 1) 83%, rgba(173, 98, 92, 1) 100%, rgba(229, 130, 109, 1) 100%);
+    border-radius: 10px;
+}
+
+/* Estilos Formulario tercer-contenido */
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0px;
+}
+
+/* Estilos h2 del registro */
+.contact-form h2 {
+    font-family: var(--Alumni);
+    font-size: 30px;
+    margin: 20px;
+    text-align: left;
+    padding: 20px
+}
+
+/* Estilos elemento P del formulario */
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+    font-family: var(--Alumni);
+    font-size: 20px;
+}
+
+
+.contact-form form label {
+    display: block;
+}
+
+
+.contact-form form .block {
+    grid-column: 1/3;
+}
+
+/* Estilos del boton enviar y los inputs */
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #f4f2f3;
+    border-bottom: 1px solid var(--color_primario);
+    font-family: var(--Alumni);
+    font-size: 20px;
+    max-height: 120px;
+}
+
+/* Estilos Button enviar del registro */
+.contact-form form button {
+    background: var(--blanco_frontal);
+    border: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 1em;
+    color: var(--color_titulos);
+    font-size: 30px;
+}
+
+/* Estilos boton enviar registro hover*/
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: var(--color_primario);
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+
+/* MQ */
+@media(min-width: 800px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* FIN TERCER CONTENIDO NUEVO */
+
 
 
 /* ESTILOS CUARTO CONTENIDO */
 .cuarto_contenido {
     background-color: var(--fondo_color_logo);
     /* border: 1px solid black; */
-   display: grid;
-   grid-template-columns: 1 1 1 auto 1fr;
+    display: grid;
+    grid-template-columns: 1 1 1 auto 1fr;
     /* margin: 10px; */
     padding: 20px;
     /* display: grid; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* Tamaño delas columnas*/
     grid-auto-rows: auto;
-    gap:5px;
+    gap: 5px;
     /* justify-items: center; */
     /* Centrar horizontalmente */
     align-items: center;
     /* Centrar verticalmente */
 }
 
-
-
+/*Ajusta la imagen en su propio contenedor cuando se hace hover*/
 .img_item {
     overflow: hidden;
-    /*Ajusta la imagen en su propio contenedor cuando se hace hover*/
-
 }
 
+/*  ESTILOS QUINTO_CONTENIDO  Estilos del titulo de los medios de pagos */
+.quinta_seccion .titulo {
+    font-size: 90px;
+}
 
+/* Estilos de los nombres medio de pagos */
+.quinta_seccion h2 {
+    font-size: 35px;
+    margin: 20px 0px 0px 10px;
+    font-family: var(--Big);
+    color: white;
+    padding: 5px
+}
 
-/* ESTILOS QUINTO_CONTENIDO */
-
-/* Estilos del titulo de los medios de pagos */
-.quinta_seccion .titulo{
-    font-size: 60px;
-    }
-
-    /* Estilos de los nombres medio de pagos */
-    .quinta_seccion h2{
-    font-size:35px;
-    margin:20px 0px 0px 10px;
-    font-family:var(--Big);
-    color:white;
-    padding:5px
-    }
-
+/* Estilos imaganes de la seccion medios de pagos */
 .volumen_img {
     margin-bottom: 30px;
     height: auto;
@@ -484,6 +580,7 @@ height: 300px;
     border-style: inset;
 }
 
+/* Seccion medios de pagos */
 .medios_pago_grid {
     background: radial-gradient(circle, rgba(229, 130, 109, 1) 0%, rgba(127, 87, 79, 1) 0%, rgba(99, 75, 70, 1) 28%, rgba(76, 65, 63, 1) 70%, rgba(50, 54, 55, 1) 100%);
     width: auto;
@@ -492,6 +589,7 @@ height: 300px;
     /* align-content:space-around; */
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: 30px 0px;
 }
 
 .grid_padre_img {
@@ -505,16 +603,14 @@ height: 300px;
 .volumen_img img {
     width: 30%;
 }
+
 .valor_input {
     border: 2px solid white;
 }
 
-
-
-/* ESTILOS ULTIMO CONTENIDO (FOOTER)*/
-
-/* Cargamos la imagen de fondo del Footer */
-.ultima_seccion{
+/* ESTILOS ULTIMO CONTENIDO (FOOTER)
+Cargamos la imagen de fondo del Footer */
+.ultima_seccion {
     background: url(../../img/svg_footer/fondo1.svg) no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -524,121 +620,75 @@ height: 300px;
 .footer_grid_padre {
     height: auto;
     width: 100%;
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     align-items: center;
     color: #f2f2f2;
-    grid-area: 10px;
+    text-align: center;
 }
 
 /* Estilos social network */
-.svg img{
-    width:34px;
-    margin:20px 0px 0px 20px;
+.svg img {
+    width: 34px;
+    margin: 20px 0px 0px 20px;
     transition: 0.5s;
 }
 
-.svg img:hover{
-    width:52px;
-    margin:20px 0px 0px 20px;
+.svg img:hover {
+    width: 52px;
+    margin: 20px 0px 0px 20px;
     transition: 0.1s;
 
 }
 
 /* Le colocamos un margen a cada icono de red social */
-.footer_grid_padre .general_footer{
+.footer_grid_padre .general_footer {
     margin: 20px;
 
 }
 
 /* Estilo a los titulos del footer (h3) */
-.general_footer h3{
-color: var(--blanco_frontal);
-font-size: 30px;
-font-family: var(--Alumni);
+.general_footer h3 {
+    color: var(--blanco_frontal);
+    font-size: 30px;
+    font-family: var(--Alumni);
 }
 
 /* Estilos para los UL del footer */
-.general_footer ul{
-    margin:15px 0px;
+.general_footer ul {
+    margin: 15px 0px;
 }
 
 /* Estilos para los elementos Li del footer */
-.footer_grid_padre li{
-    padding:10px 0px;
+.footer_grid_padre li {
+    padding: 10px 0px;
     list-style: none;
     font-family: var(--Alumni);
     font-size: 25px;
 
 }
-.footer_grid_padre li:hover{
-    background-color:#3236372e;
+
+.footer_grid_padre li:hover {
+    background-color: #3236372e;
     color: black;
-    border-radius:10px;
-    padding:10px 0px;
+    border-radius: 10px;
+    padding: 10px 0px;
 }
 
 /* Estilos para que se coloque al lado el icono del itulo del footer */
-.general_footer .inline{
+.general_footer .inline {
     display: flex;
 }
 
 /*Estilos del icono del h3 del footer  */
-.inline img{
+.inline img {
     padding: 0px 0px;
     width: 35px;
 }
 
 /* Estilos para los enlaces del footer */
-.general_footer a{
+.general_footer a {
     text-decoration: none;
-    color:#ffffff;
+    color: #ffffff;
 }
-
-
-/* INICIO TERCER CONTENIDO NUEVO */
-
-.tercer_contenido_nuevo{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap:.2rem;
-margin: 10px 0px 10px 0px;
-height: auto;
-background-color: #f4f2f3;
-}
-
-.tercer_contenido_nuevo .izquierdo_nuevo{
-    width: auto;
-    height: auto;
-    /* border: 1px solid #323637; */
-}
-
-.tercer_contenido_nuevo img{
-    width: 100%;
-    border-radius: 0px 10px 10px 0px
-}
-
-.tercer_contenido_nuevo .derecho_nuevo{
-    width: 100%;
-    height: 500px;
-    /* border: 1px solid #13b3db; */
-    color: var(--color_titulos);
-    font-family: var(--tipografia_principal);
-    text-align: center;
-    font-size: 50px;
-}
-
-.derecho_nuevo p{
-    color: var(--color_titulos);
-    font-family: var(--tipografia_principal);
-    text-align: center;
-    font-size: 50px;
-    margin: 30px;
-}
-
-
-
-
-
-/* FIN TERCER CONTENIDO NUEVO */

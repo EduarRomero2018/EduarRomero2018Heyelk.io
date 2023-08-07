@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Big+Shoulders+Display:wght@100&family=Wire+One&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Big+Shoulders+Display:wght@100&family=Wire+One&display=swap"
         rel="stylesheet">
 </head>
 
@@ -22,6 +24,7 @@
             <div class="logo-header">
                 <a href="./"><img src="./assets/img/logo.png" alt=""></a>
             </div>
+
             <div class="nav-menu">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
@@ -30,7 +33,7 @@
                 <ul>
                     <li><a href="">Inicio</a></li>
                     <li><a href="">Servicios</a></li>
-                    <li><a href="">Contáctanos</a></li>
+                    <li><a href="#contactanos">Contáctanos</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Colecciones</a>
                         <div class="dropdown-content">
@@ -129,23 +132,57 @@
 
 
         <!-- INICIO TERCER CONTENIDO NUEVO -->
-        <div class="tercer_contenido_nuevo">
-            <div class="izquierdo_nuevo">
-                <img src="./assets/img//46.jpeg" alt="">
-            </div>
-            <div class="derecho_nuevo">
-                <p>Cuentanos tus gustos y nosotros lo diseñamos</br> a tu medida</p>
-                <div class="register_grid_padre">
-                    <div class="contenedor_input">
-                        <input type="text" class="nombre" name="nombre" placeholder="Nombre">
-                        <input type="text" class="apellido" name="apellido" placeholder="Apellido">
-                        <input type="email" class="correo" name="correo" placeholder="Correo Electronico">
-                        <input type="text" class="asunto" name="area" placeholder="Asunto">
-                    </div>
+        <div class="tercer_contenido" id="contactanos">
+            <p class="titulo"> Cuentanos tus gustos y nosotros lo diseñamos
+                a tu medida</p>
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info">
+                    <img src="./assets/img//46.jpeg" alt="">
                 </div>
+
+
+                <div class="contact-form">
+                    <h2>Escríbemos</h2>
+                    <form action="#">
+                        <p>
+                            <label>Nombe</label>
+                            <input type="text" name="fullname">
+                        </p>
+                        <p>
+                            <label>Apellido</label>
+                            <input type="text" name="fullname">
+                        </p>
+                        <p>
+                            <label>Numero de Teléfono</label>
+                            <input type="tel" name="phone">
+                        </p>
+                        <p>
+                            <label>Correo Electronico</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p class="block">
+                            <label>Déjanos tu Mensaje</label>
+                            <textarea name="message" rows="1"></textarea>
+                        </p>
+                        <p class="block">
+                            <a href="#">
+                                <button>
+                                    Enviar
+                                </button>
+                            </a>
+                        </p>
+                    </form>
+                </div>
+
             </div>
+
         </div>
         <!-- FIN TERCER CONTENIDO NUEVO -->
+
+
+
 
 
 

@@ -1,7 +1,7 @@
 # EduarRomero2018Proyecto_Final.github.io
 Proyecto Final (html,css)
 
-* NOTA-> las siguientes clases son generales para las diferenetes secciones.
+* NOTA-> las siguientes clases son generales para las diferentes secciones.
 
 1 grid_padre
 2 img_item
